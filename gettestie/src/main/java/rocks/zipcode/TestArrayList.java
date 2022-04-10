@@ -6,7 +6,7 @@ public class TestArrayList<T> {
 
     //I believe these are the most common:
     //Size
-    //Get
+    //Contains
     //Add
 
     private ArrayList<T> list = new ArrayList<>();
@@ -15,12 +15,14 @@ public class TestArrayList<T> {
         return list;
     }
 
-    public void initList(T[] arr) {
+    public void addList(T[] arr) {
         list = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
             list.add(arr[i]);
         }
     }
 
-
+    public int getSizeOfList(T[] arr) {
+        return arr.length;
+    }
 }
