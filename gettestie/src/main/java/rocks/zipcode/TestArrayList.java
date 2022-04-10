@@ -15,10 +15,12 @@ public class TestArrayList<T> {
         return list;
     }
 
-    public void initList(T[] arr){
+    public void initList(T[] arr) {
         list = new ArrayList<>();
-        for (int i = 0; i < arr.length; i++){
-           list.add(arr[i]);
+        for (int i = 0; i < arr.length; i++) {
+            list.add(arr[i]);
         }
     }
+
+
 }
