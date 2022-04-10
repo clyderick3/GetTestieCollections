@@ -8,6 +8,8 @@ public class TestArrayList<T> {
     //Size
     //Contains
     //Add
+    //Remove
+    //Clear
 
     private ArrayList<T> list = new ArrayList<>();
 
