@@ -11,6 +11,8 @@ public class TestArrayList<T> {
     //Remove
     //Clear
 
+    //Add tests. List, Stack, Map, Set, Iterator/Comparable
+
     private ArrayList<T> list = new ArrayList<>();
 
     public ArrayList<T> getList() {
