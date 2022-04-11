@@ -12,14 +12,15 @@ public class HashSetTest {
     Set<String> setString = new HashSet<>();
 
 
-    @Before
-    public void initialize(){
-
-    }
-
     @Test
     public void testSize(){
-
+        //Given
+        String add = "Add this.";
+        Integer expected = 1;
+        //When
+        setString.add(add);
+        //Then
+        assertTrue(expected == setString.size());
     }
 
     @Test
@@ -48,16 +49,33 @@ public class HashSetTest {
 
     @Test
     public void testRemove(){
+        //Given
+        String add = "Add this.";
+        Integer expected = 0;
+        //When
+        setString.add(add);
+        setString.remove(add);
+        //Then
+        assertTrue(expected == setString.size());
 
     }
 
     @Test
     public void testClear(){
+        //Given
+        String add = "Add this.";
+        Integer expected = 0;
+        //When
+        setString.add(add);
+        setString.clear();
+        //Then
+        assertTrue(expected == setString.size());
 
     }
 
     @Test
     public void testIsEmpty(){
+        assertTrue(setString.isEmpty());
 
     }
 
