@@ -75,6 +75,17 @@ public class VectorTest {
 
     @Test
     public void testClear(){
+        //Given
+        Vector<String> shapes = new Vector<>();
+        //When
+        shapes.add("Square");
+        shapes.add("Triangle");
+        shapes.add("Circle");
+        shapes.clear();
+        Integer expected = 0;
+        Integer actual = shapes.size();
+        //Then
+        Assert.assertEquals(expected, actual);
 
 
     }
