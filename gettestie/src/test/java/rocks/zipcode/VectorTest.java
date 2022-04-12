@@ -92,6 +92,10 @@ public class VectorTest {
 
     @Test
     public void testIsEmpty(){
+        //Given
+        Vector<String> shapes = new Vector<>();
+        //When Checking on the test.
+        Assert.assertTrue(shapes.isEmpty());
 
     }
 }
