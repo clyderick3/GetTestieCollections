@@ -44,6 +44,15 @@ public class VectorTest {
 
     @Test
     public void testContains(){
+        //Given
+        Vector<String> shapes = new Vector<>();
+        //When
+        shapes.add("Square");
+        shapes.add("Triangle");
+        shapes.add("Circle");
+
+        //Then
+        Assert.assertTrue(shapes.contains("Triangle"));
 
 
     }
