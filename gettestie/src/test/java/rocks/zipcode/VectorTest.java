@@ -59,6 +59,16 @@ public class VectorTest {
 
     @Test
     public void testRemove(){
+        //Given
+        Vector<String> shapes = new Vector<>();
+        //When
+        shapes.add("Square");
+        shapes.remove("Square");
+        shapes.add("Circle");
+        Integer expected = 1;
+        Integer actual = shapes.size();
+        //Then
+        Assert.assertEquals(expected, actual);
 
 
     }
