@@ -27,6 +27,17 @@ public class VectorTest {
 
     @Test
     public void testVectorAdd(){
+        //Given
+        Vector<String> shapes = new Vector<>();
+        //When
+        shapes.add("Square");
+        System.out.println(shapes.size()); //Should show only one added thus far.
+        shapes.add("Triangle");
+        shapes.add("Circle");
+        Integer expected = 3;
+        Integer actual = shapes.size();
+        //Then
+        Assert.assertEquals(expected, actual);
 
 
     }
