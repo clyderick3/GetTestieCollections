@@ -47,4 +47,31 @@ public class LinkedListTest {
         //Then
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void containsLinkedListTest(){
+        //Given
+        LinkedList<Integer> links = new LinkedList<>();
+        //When
+        links.add(0, 10);
+        links.add(1, 20);
+        //Then
+        Assert.assertTrue(links.contains(20));
+    }
+
+    @Test
+    public void sizeLinkedListTest(){
+        //Given
+        LinkedList<Integer> links = new LinkedList<>();
+        //When
+        links.add(0, 10);
+        links.add(1, 20);
+        links.add(2, 30);
+        links.add(3, 40);
+        links.add(4, 50);
+        Integer expected = 5;
+        Integer actual = links.size();
+        //Then
+        Assert.assertEquals(expected, actual);
+    }
 }
