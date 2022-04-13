@@ -20,4 +20,19 @@ public class StackTest {
         //Then
         Assert.assertEquals(expected,actual);
     }
+
+    @Test
+    public void removeStackTest(){
+        //Given
+        Stack<Character> alphabet = new Stack<>();
+        //When
+        alphabet.add('a');
+        alphabet.add('b');
+        alphabet.add('c');
+        alphabet.remove(1);
+        Integer expected = 2;
+        Integer actual = alphabet.size();
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
 }
