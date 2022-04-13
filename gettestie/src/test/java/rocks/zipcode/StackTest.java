@@ -35,4 +35,19 @@ public class StackTest {
         //Then
         Assert.assertEquals(expected,actual);
     }
+
+    @Test
+    public void clearStackTest(){
+        //Given
+        Stack<Character> alphabet = new Stack<>();
+        //When
+        alphabet.add('a');
+        alphabet.add('b');
+        alphabet.add('c');
+        alphabet.clear();
+        Integer expected = 0;
+        Integer actual = alphabet.size();
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
 }
