@@ -32,4 +32,19 @@ public class LinkedListTest {
         //Then
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void clearLinkedListTest(){
+        //Given
+        LinkedList<Integer> links = new LinkedList<>();
+        //When
+        links.add(0, 10);
+        links.add(1, 20);
+        links.add(2, 30);
+        links.clear();
+        Integer expected = 0;
+        Integer actual = links.size();
+        //Then
+        Assert.assertEquals(expected, actual);
+    }
 }
