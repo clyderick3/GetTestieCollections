@@ -62,4 +62,17 @@ public class PriorityQueueTest {
         //Then
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void containsPriorityQueueTest() {
+        //Given
+        PriorityQueue<String> lines = new PriorityQueue<String>();
+        //When
+        lines.add("Person 1");
+        lines.add("Person 2");
+        lines.add("Jane Doe");
+        Boolean isPresent = lines.contains("Jane Doe");
+        //Then
+        Assert.assertTrue(isPresent);
+    }
 }
