@@ -50,4 +50,20 @@ public class StackTest {
         //Then
         Assert.assertEquals(expected,actual);
     }
+
+    @Test
+    public void sizeStackTest(){
+        //Given
+        Stack<Character> alphabet = new Stack<>();
+        //When
+        alphabet.add('a');
+        alphabet.add('b');
+        alphabet.add('c');
+        alphabet.add('d');
+        alphabet.add('e');
+        Integer expected = 5;
+        Integer actual = alphabet.size();
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
 }
