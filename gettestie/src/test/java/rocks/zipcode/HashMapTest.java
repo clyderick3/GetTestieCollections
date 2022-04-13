@@ -32,4 +32,18 @@ public class HashMapTest {
         //Then
         Assert.assertEquals(expected,actual);
     }
+
+    @Test
+    public void clearHashMapTest(){
+        //Given
+        Map<String, String> hashMap = new HashMap();
+        Integer expected = 0;
+        //When
+        hashMap.put("Mike","Jones");
+        hashMap.put("Michael", "Jordan");
+        hashMap.clear();
+        Integer actual = hashMap.size();
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
 }
