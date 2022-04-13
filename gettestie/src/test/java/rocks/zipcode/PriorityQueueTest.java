@@ -34,4 +34,18 @@ public class PriorityQueueTest {
         //Then
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void clearPriorityQueueTest() {
+        //Given
+        PriorityQueue<String> lines = new PriorityQueue<String>();
+        //When
+        lines.add("Person 1");
+        lines.add("Person 2");
+        lines.clear();
+        Integer expected = 0;
+        Integer actual = lines.size();
+        //Then
+        Assert.assertEquals(expected, actual);
+    }
 }
