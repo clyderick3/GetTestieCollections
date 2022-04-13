@@ -32,4 +32,18 @@ public class TreeSetTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void sizeTreeSetTest(){
+        //Given
+        TreeSet<String> trees = new TreeSet<>();
+        //When
+        trees.add("Maple");
+        trees.add("Fig");
+        trees.add("Apple");
+        Integer expected = 3;
+        Integer actual = trees.size();
+        //Then
+        Assert.assertEquals(expected, actual);
+    }
+
 }
