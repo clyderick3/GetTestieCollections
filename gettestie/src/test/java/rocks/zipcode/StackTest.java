@@ -135,5 +135,23 @@ public class StackTest {
         Assert.assertEquals(expected,actual);
     }
 
+    @Test
+    public void isEmptyStackTest(){
+        //Given
+        Stack<Character> alphabet = new Stack<>();
+        //When
+        alphabet.add('a');
+        alphabet.add('b');
+        alphabet.clear();
+        alphabet.add('x');
+        alphabet.add('y');
+        alphabet.add('z');
+        alphabet.pop();
+        alphabet.clear();
+        Boolean isItEmpty = alphabet.isEmpty();
+        //Then
+        Assert.assertTrue(isItEmpty);
+    }
+
 
 }
