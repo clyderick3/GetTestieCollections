@@ -66,4 +66,18 @@ public class StackTest {
         //Then
         Assert.assertEquals(expected,actual);
     }
+
+    @Test
+    public void containsStackTest(){
+        //Given
+        Stack<Character> alphabet = new Stack<>();
+        //When
+        alphabet.add('a');
+        alphabet.add('b');
+        alphabet.add('c');
+        alphabet.add('d');
+        Boolean isPresent = alphabet.contains('c');
+        //Then
+        Assert.assertTrue(isPresent);
+    }
 }
