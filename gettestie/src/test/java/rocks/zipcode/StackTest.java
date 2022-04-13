@@ -88,9 +88,12 @@ public class StackTest {
         //When
         alphabet.add('a');
         alphabet.add('b');
-        alphabet.add('c');
+        alphabet.clear();
+        alphabet.add('x');
+        alphabet.add('y');
+        alphabet.add('z');
         alphabet.pop();
-        Character expected = 'b';
+        Character expected = 'y';
         Character actual = alphabet.pop();
         //Then
         Assert.assertEquals(expected,actual);
