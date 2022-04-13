@@ -29,7 +29,7 @@ public class TreeMapTest {
         tinder.put(1, "Kiss");
         tinder.put(2, "Hug");
         tinder.remove(2);
-        Integer expected = 2;
+        Integer expected = 1;
         Integer actual = tinder.size();
         //Then
         Assert.assertEquals(expected, actual);
@@ -64,14 +64,15 @@ public class TreeMapTest {
     }
 
     @Test
-    public void addTreeMapTest(){
+    public void clearTreeMapTest(){
         //Given
         TreeMap<Integer, String> tinder = new TreeMap<>();
         //When
         tinder.put(1, "Kiss");
         tinder.put(2, "Hug");
         tinder.put(3, "High Five.");
-        Integer expected = 3;
+        tinder.clear();
+        Integer expected = 0;
         Integer actual = tinder.size();
         //Then
         Assert.assertEquals(expected, actual);
