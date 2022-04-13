@@ -117,5 +117,23 @@ public class StackTest {
         Assert.assertEquals(expected,actual);
     }
 
+    @Test
+    public void pushStackTest(){
+        //Given
+        Stack<Character> alphabet = new Stack<>();
+        //When
+        alphabet.add('a');
+        alphabet.add('b');
+        alphabet.clear();
+        alphabet.add('x');
+        alphabet.add('y');
+        alphabet.add('z');
+        alphabet.push('y');
+        Character expected = 'y';
+        Character actual = alphabet.push('y');
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
+
 
 }
