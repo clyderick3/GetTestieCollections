@@ -59,4 +59,16 @@ public class HashMapTest {
         //Then
         Assert.assertEquals(expected,actual);
     }
+
+    @Test
+    public void containsHashMapTest(){
+        //Given
+        Map<String, String> hashMap = new HashMap();
+        //When
+        hashMap.put("Mike","Jones");
+        hashMap.put("Chris","Rock");
+        Boolean actual = hashMap.containsKey("Mike");
+        //Then
+        Assert.assertTrue(actual);
+    }
 }
