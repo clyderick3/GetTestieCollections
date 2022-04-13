@@ -80,4 +80,19 @@ public class StackTest {
         //Then
         Assert.assertTrue(isPresent);
     }
+
+    @Test
+    public void popStackTest(){
+        //Given
+        Stack<Character> alphabet = new Stack<>();
+        //When
+        alphabet.add('a');
+        alphabet.add('b');
+        alphabet.add('c');
+        alphabet.pop();
+        Character expected = 'b';
+        Character actual = alphabet.pop();
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
 }
