@@ -98,4 +98,24 @@ public class StackTest {
         //Then
         Assert.assertEquals(expected,actual);
     }
+
+    @Test
+    public void peekStackTest(){
+        //Given
+        Stack<Character> alphabet = new Stack<>();
+        //When
+        alphabet.add('a');
+        alphabet.add('b');
+        alphabet.clear();
+        alphabet.add('x');
+        alphabet.add('y');
+        alphabet.add('z');
+        alphabet.peek();
+        Character expected = 'z';
+        Character actual = alphabet.peek();
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
+
+
 }
